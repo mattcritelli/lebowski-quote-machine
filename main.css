@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+
+#quote-display {
+  flex-direction: column;
+  padding-top: 2%;
+  width: 80%;
+}
+
+.quote-text {
+  font-size: 2.5em;
+  font-weight: 500;
+  text-shadow: 2px 2px #D3D3D3;
+}
+
+.quote-character {
+  font-size: 1.2em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.photo {
+  width: 30%;
+}
+
+.photo img{
+  padding-top: 20%;
+  height: auto;
+  width: 100%;
+}
