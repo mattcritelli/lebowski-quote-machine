@@ -18,8 +18,6 @@ function showCharacter(character){
   }
 }
 
-
-
 $(document).ready(function() {
   $("#get-quote button").on("click", function(){
     $.getJSON('http://lebowski.me/api/quotes/random.json',
@@ -28,9 +26,7 @@ $(document).ready(function() {
         var character = data.quote.lines[0].character.name;
         $(".quote-text").html("<p>" + quote + "</p>");
         $(".quote-character").html("<p>-" + character + "</p>");
-        console.log(character);
         var char = showCharacter(character);
-        console.log("char?", char)
         $(".photo img").attr("src", `images/${char}`)
 
     });
